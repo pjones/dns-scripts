@@ -13,11 +13,12 @@ pkgs.stdenvNoCC.mkDerivation rec {
     coreutils
     curl
     gawk
+    gnused
+    iproute
     jq
     net_snmp
     nettools
     openssl
-    iproute
   ];
 
   installPhase = ''

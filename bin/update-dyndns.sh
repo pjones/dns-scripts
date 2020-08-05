@@ -99,7 +99,6 @@ set_domain_ip() {
     make_request \
       "$api_key" \
       "$secret_key" \
-      --request GET \
       "$base_url/dns/managed/" |
       jq --arg name "$domain_name" '.data[]|select(.name == $name)|.id'
   )
