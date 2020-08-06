@@ -1,6 +1,6 @@
 {
     "mock-httpd": {
-        "branch": "master",
+        "branch": "trunk",
         "description": "A HTTP server for testing HTTP clients",
         "homepage": "",
         "owner": "pjones",
