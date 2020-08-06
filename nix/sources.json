@@ -1,0 +1,38 @@
+{
+    "mock-httpd": {
+        "branch": "master",
+        "description": "A HTTP server for testing HTTP clients",
+        "homepage": "",
+        "owner": "pjones",
+        "repo": "mock-httpd",
+        "rev": "fb850f5706af1decf4f7c9e34238cede90c71544",
+        "sha256": "0isww8fg2s4yxcy2cyva3vpjppr1z6imdngfjnysa2limalvrn3w",
+        "type": "tarball",
+        "url": "https://github.com/pjones/mock-httpd/archive/fb850f5706af1decf4f7c9e34238cede90c71544.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "niv": {
+        "branch": "master",
+        "description": "Easy dependency management for Nix projects",
+        "homepage": "https://github.com/nmattia/niv",
+        "owner": "nmattia",
+        "repo": "niv",
+        "rev": "303f442c43f918bc43400ab4a0b662a82ca7748b",
+        "sha256": "19z1qypd6zd4qzhrhjm7j55v85fzf8wln8l9vslvn9dpspcwxv7c",
+        "type": "tarball",
+        "url": "https://github.com/nmattia/niv/archive/303f442c43f918bc43400ab4a0b662a82ca7748b.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "nixpkgs": {
+        "branch": "nixos-20.03",
+        "description": "A read-only mirror of NixOS/nixpkgs tracking the released channels. Send issues and PRs to",
+        "homepage": "https://github.com/NixOS/nixpkgs",
+        "owner": "NixOS",
+        "repo": "nixpkgs-channels",
+        "rev": "977000f149bd4ddb65bf1af09552898a0f305c72",
+        "sha256": "1ad3bviywxd64g4vwk4ppjkkajd3rfqjhnp6xcz3w0ih0sbn0rh5",
+        "type": "tarball",
+        "url": "https://github.com/NixOS/nixpkgs-channels/archive/977000f149bd4ddb65bf1af09552898a0f305c72.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    }
+}

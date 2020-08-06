@@ -1,0 +1,21 @@
+directory: /tmp/json
+
+listen:
+  - port: 3210
+
+routes:
+  - match_path: /dns/managed/
+    match_method: GET
+    actions:
+      - serve_file: get-dns-managed.json
+      - content_type: application/json
+  - match_path: /dns/managed/1119443/records
+    match_method: GET
+    actions:
+      - serve_file: get-dns-managed-record.json
+      - content_type: application/json
+  - match_path: /dns/managed/1119443/records/57181329
+    match_method: PUT
+    actions:
+      - save_body: record-update.json
+      - response_code: 201

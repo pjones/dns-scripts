@@ -1,0 +1,41 @@
+{
+  "totalRecords": 3,
+  "totalPages": 1,
+  "data": [
+    {
+      "created": 1520294400000,
+      "folderId": 18954,
+      "gtdEnabled": false,
+      "updated": 1520350904465,
+      "processMulti": false,
+      "activeThirdParties": [],
+      "pendingActionId": 0,
+      "name": "exampledomain1.com",
+      "id": 5940367
+    },
+    {
+      "created": 1520294400000,
+      "folderId": 18954,
+      "gtdEnabled": false,
+      "updated": 1520350963956,
+      "processMulti": false,
+      "activeThirdParties": [],
+      "pendingActionId": 3,
+      "name": "exampledomain2.com",
+      "id": 5940376
+    },
+    {
+      "created": 1398384000000,
+      "folderId": 18954,
+      "gtdEnabled": false,
+      "updated": 1520350788345,
+      "processMulti": false,
+      "activeThirdParties": [],
+      "pendingActionId": 0,
+      "vanityId": 16501,
+      "name": "exampledomain.com",
+      "id": 1119443
+    }
+  ],
+  "page": 0
+}

@@ -25,6 +25,8 @@ Usage: $(basename "$0") [options]
   -d NAME The domain name to update
   -i IP   Set the IP address manually
   -s FILE File Containing the secret key
+
+  -A URL  Use URL atlernate base URL
   -S      Use the sandbox API instead of the production API
 
 EOF
@@ -47,7 +49,7 @@ make_request() {
     cut -d' ' -f2)
 
   curl \
-    --verbose \
+    --no-progress-meter \
     --location \
     --header "Content-Type: application/json" \
     --header "x-dnsme-apiKey: $api_key" \
@@ -180,7 +182,7 @@ main() {
 }
 
 ################################################################################
-while getopts "ha:d:i:s:S" o; do
+while getopts "ha:d:i:s:A:S" o; do
   case "${o}" in
   h)
     usage
@@ -201,6 +203,10 @@ while getopts "ha:d:i:s:S" o; do
 
   s)
     option_secret_key_file=$OPTARG
+    ;;
+
+  A)
+    base_url=$OPTARG
     ;;
 
   S)
